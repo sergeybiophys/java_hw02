@@ -24,6 +24,16 @@ package org.itstep.task06;
  */
 public class Main {
     public static void main(String[] args) {
+        CharSequence cs = new StringBuilder("java");
+        MainString ms = new MainString(cs);
+        MainString t2 = new MainString('c',10);
+        MainString tmp = ms.concat(t2);
+        //char[] tmp = ms.concat(t2);
 
+        System.out.print(tmp.getChars().length);
+        for (char item: tmp.getChars())
+        {
+            System.out.print(item);
+        }
     }
 }
