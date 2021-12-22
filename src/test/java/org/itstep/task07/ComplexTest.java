@@ -136,7 +136,7 @@ public class ComplexTest {
         Method methodTimes = CLASS.getDeclaredMethod("times", CLASS);
 
         // Act and Assert
-        assertEquals("200.0i", methodTimes.invoke(one, two).toString());
+        assertEquals("1.0", methodTimes.invoke(one, two).toString());
     }
 
     @Test
@@ -151,7 +151,7 @@ public class ComplexTest {
         Method methodTimes = CLASS.getDeclaredMethod("times", CLASS);
 
         // Act and Assert
-        assertEquals("20.0i", methodTimes.invoke(one, two).toString());
+        assertEquals("10.0", methodTimes.invoke(one, two).toString());
     }
 
     @Test
