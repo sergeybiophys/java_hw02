@@ -146,7 +146,7 @@ class MoneyTest {
     @Order(8)
     @DisplayName("Проверка метода умножения")
     @ParameterizedTest(name = "{0},{1}*{2}={3},{4}")
-    @CsvSource({"5,0,2,10,0","3,5,2,6,10", "10,0,10,100,0"})
+    @CsvSource({"5,0,2,10,0","3,5,2,7,0", "10,0,10,100,0"})
     void multiplication(long num1, byte den1, double value, long rnum, byte rden) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         mathCheckDouble(new Object[]{num1, den1, value, rnum, rden}, "multiply");
     }

@@ -31,6 +31,14 @@ package org.itstep.task05;
  */
 public class Main {
     public static void main(String[] args) {
+        Money m = new Money(3,(byte)5);
 
+        //double result = m.moneyToDouble();
+
+        Money n = m.multiply(2);
+
+        System.out.print("\n");
+
+        System.out.print(n.getHryvnia() + " " + n.getKopecks());
     }
 }
